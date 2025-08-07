@@ -42,3 +42,5 @@ models:
       +materialized: table
     healthcare:
       +materialized: table
+    healthproduct:
+      +materialized: view
