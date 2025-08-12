@@ -3,7 +3,5 @@ sources:
     project: "dbt-gcp-468311"
     dataset: "healthcare782025"
     tables:
-      - name: "healthcare782025"
-
-
-
+      - name: "orders_stg"
+      - name: "orderitems_stg"
