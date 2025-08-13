@@ -19,3 +19,10 @@ sources:
         identifier: "STORES"
       - name: "ORDERITEMS"
         identifier: "ORDERITEMS"
+
+  - name: "healthcare"
+    project: "dbt-gcp-468311"
+    schema: "healthcare782025"
+    tables:
+      - name: "orders_stg"
+      - name: "orderitems_stg"

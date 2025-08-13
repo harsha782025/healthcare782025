@@ -9,8 +9,8 @@ select
     count(distinct o.orderid) as ordercount,
     sum(oi.totalprice) as revenue,
     o.updated_at
-from `dbt-gcp-468311.healthcare782025.orders_stg` o
-join `dbt-gcp-468311.healthcare782025.orderitems_stg` oi on o.orderid = oi.orderid
+from {{ source("healthcare", "orders_stg") }} o
+join {{ source("healthcare", "orderitems_stg") }} oi on o.orderid = oi.orderid
 
 group by
     o.orderid,

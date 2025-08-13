@@ -4,8 +4,10 @@ sources:
     schema: "SLEEKMART_OMS_L1_LANDING"
     tables:
       - name: "CUSTOMERS"
+        description: "cust are here"
         identifier: "CUSTOMERS"
       - name: "ORDERS"
+        description: "orders are here"
         identifier: "ORDERS"
       - name: "DATES"
         identifier: "DATES"

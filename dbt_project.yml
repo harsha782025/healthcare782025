@@ -26,12 +26,6 @@ clean-targets:
 # Model configurations
 models:
   healthcare782025:  
-    healthcare:
-      +materialized: table
-    healthproduct:
-      +materialized: view
-    oms_dbt_proj:
-      +materialized: table
+    +materialized: table
   SLEEKMART_OMS_L1_LANDING:  
-    dbt_proj:
-      +materialized: table
+    +materialized: table
